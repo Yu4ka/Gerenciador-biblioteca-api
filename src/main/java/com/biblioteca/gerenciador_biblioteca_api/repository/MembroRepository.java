@@ -1,4 +1,9 @@
 package com.biblioteca.gerenciador_biblioteca_api.repository;
 
-public interface MembroRepository {
+import com.biblioteca.gerenciador_biblioteca_api.model.MembroModel;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface MembroRepository extends JpaRepository<MembroModel, Long> {
 }
